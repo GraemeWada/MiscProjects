@@ -354,13 +354,13 @@ public class GameManager {
 		gameOver = false;
 		staticBlocks.clear();
 		shuffleBag();
+		level = 0;
 		currentPiece = pick();
 		currentPiece.setXY(Xi, Yi);
 		next = pick();
 		next.setXY(nX, nY);
 		holdPiece = pick();
 		holdPiece.setXY(hX, hY);
-		level = 0;
 		score = 0;
 		levelClears = 0;
 		dropInterval = intervals[level];
